@@ -1,0 +1,62 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+
+# Static files
+/static/
+media/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.venv/
+myvenv/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# MySQL
+*.sql
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+
+# Django migrations
+migrations/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Testing files
+*.bak
+*.swp
+
+# Environment variables
+.env
+*.env
