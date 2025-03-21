@@ -25,10 +25,12 @@ DEBUG = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    # "http://localhost:3000",  # React
-    "http://127.0.0.1:3000",  # Vue or another frontend
+    "http://localhost:5173", 
+    "https://api.chingoka.or.tz",  
+    "https://chingoka.or.tz",
+    "http://127.0.0.1:3000",  
 ]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://api.chingoka.or.tz', 'www.https://api.chingoka.or.tz', '.chingoka.or.tz', '127.0.0.1']
 AUTH_USER_MODEL = 'user.User'
 FRONTEND_BASE_URL = 'http://localhost:5173/'
 
@@ -79,6 +81,18 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'AUTH_HEADER_TYPES': ('Bearer',),  # Use "Bearer" in the Authorization header
 }
+
+CORS_ALLOW_ALL_ORIGINS = False  # Make sure this is set to False unless you want to allow all origins
+CORS_ALLOW_CREDENTIALS = True   # If you're using cookies or other credentials
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
 
 ROOT_URLCONF = 'ChingokaSystem.urls'
 
