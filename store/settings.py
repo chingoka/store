@@ -26,12 +26,12 @@ DEBUG = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173", 
+    "http://localhost:5173",
     "https://api.chingoka.or.tz",  
     "https://chingoka.or.tz",
     "http://127.0.0.1:3000",  
 ]
-ALLOWED_HOSTS = ['https://api.chingoka.or.tz', 'www.https://api.chingoka.or.tz', '.chingoka.or.tz', '127.0.0.1']
+ALLOWED_HOSTS = ['http://portal.chingoka.or.tz/', 'https://portal.chingoka.or.tz/', '.chingoka.or.tz', '127.0.0.1']
 AUTH_USER_MODEL = 'user.User'
 FRONTEND_BASE_URL = 'http://localhost:5173/'
 CORS_ALLOW_ALL_ORIGINS = False  # Make sure this is set to False unless you want to allow all origins
